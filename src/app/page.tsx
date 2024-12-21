@@ -1,6 +1,7 @@
 import { ProjectCard } from '@/components/project-card';
 import { SectionTitle } from '@/components/section-title';
 import { TimelineCard } from '@/components/timeline-card';
+import { getRepos } from '@/server/actions/get-repos';
 
 const events = [
   {
@@ -23,7 +24,9 @@ const events = [
   },
 ];
 
-export default function Page() {
+export default async function Page() {
+  const { data } = await getRepos();
+
   return (
     <div className="flex flex-col gap-y-12 py-6">
       <section className="text-xl leading-8">
@@ -35,10 +38,9 @@ export default function Page() {
       <section>
         <SectionTitle>Projects</SectionTitle>
         <div className="grid md:grid-cols-2 gap-4">
-          <ProjectCard>A description</ProjectCard>
-          <ProjectCard>A description</ProjectCard>
-          <ProjectCard>A description</ProjectCard>
-          <ProjectCard>A description</ProjectCard>
+          {data?.map((item) => (
+            <ProjectCard key={item.id} {...item} />
+          ))}
         </div>
       </section>
 
