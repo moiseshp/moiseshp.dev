@@ -1,31 +1,12 @@
 import { ProjectCard } from '@/components/project-card';
 import { SectionTitle } from '@/components/section-title';
-import { TimelineCard } from '@/components/timeline-card';
-import { getRepos } from '@/server/actions/get-repos';
-
-const events = [
-  {
-    date: 'March 2023',
-    title: 'Application UI code in Tailwind CSS',
-    description:
-      'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.',
-  },
-  {
-    date: 'April 2023',
-    title: 'Marketing UI design in Figma',
-    description:
-      'All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.',
-  },
-  {
-    date: 'June 2023',
-    title: 'E-Commerce UI code in Tailwind CSS',
-    description:
-      'Get started with dozens of web components and interactive elements built on top of Tailwind CSS.',
-  },
-];
+import { ExperienceCard } from '@/components/experience-card';
+import { getExperiences } from '@/server/actions/get-experiences';
+import { getProjects } from '@/server/actions/get-projects';
 
 export default async function Page() {
-  const { data } = await getRepos();
+  const { data: projects } = await getProjects();
+  const { data: experiences } = getExperiences();
 
   return (
     <div className="flex flex-col gap-y-12 py-6">
@@ -38,7 +19,7 @@ export default async function Page() {
       <section>
         <SectionTitle>Projects</SectionTitle>
         <div className="grid md:grid-cols-2 gap-4">
-          {data?.map((item) => (
+          {projects?.map((item) => (
             <ProjectCard key={item.id} {...item} />
           ))}
         </div>
@@ -46,7 +27,7 @@ export default async function Page() {
 
       <section>
         <SectionTitle>Experience</SectionTitle>
-        <TimelineCard events={events} />
+        <ExperienceCard items={experiences} />
       </section>
     </div>
   );

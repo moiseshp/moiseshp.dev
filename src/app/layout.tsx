@@ -1,4 +1,4 @@
-import { GoogleAnalytics } from '@next/third-parties/google';
+// import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { baseFont } from '@/app/fonts';
 import { cn } from '@/lib/utils';
