@@ -29,7 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <header className="container max-w-4xl flex justify-between items-center mx-auto py-6 sticky top-0 z-10 bg-background px-3 lg:px-0">
+          <header className="container max-w-4xl flex justify-between items-center py-6 sticky top-0 z-10 bg-background px-3 lg:px-0">
             <BrandLogo />
             <nav className="flex items-center space-x-1 lg:space-x-2">
               <SocialMediaList />
@@ -39,7 +39,7 @@ export default function RootLayout({
           <main className="container max-w-4xl flex-grow px-5 lg:px-0">
             {children}
           </main>
-          <footer className="container max-w-4xl py-6 mx-auto text-sm text-muted-foreground px-5 lg:px-0">
+          <footer className="container max-w-4xl py-6 text-sm text-muted-foreground px-5 lg:px-0">
             © {new Date().getFullYear()} Moisés Huaringa. All rights reserved.
           </footer>
         </ThemeProvider>

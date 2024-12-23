@@ -6,9 +6,9 @@ const hiddenProjects = ['moiseshp', 'blanquiazul'];
 const Project = {
   index: async (): Promise<IProject[]> => {
     try {
-      const response = await fetch(
-        `https://api.github.com/users/moiseshp/repos?sort=pushed`,
-      );
+      const endpoint =
+        'https://api.github.com/users/moiseshp/repos?sort=pushed';
+      const response = await fetch(endpoint);
 
       if (!response.ok) {
         throw new Error('Failed to fetch repos');

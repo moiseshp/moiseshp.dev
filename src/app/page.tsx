@@ -9,7 +9,7 @@ export default async function Page() {
   const { data: experiences } = getExperiences();
   return (
     <div className="flex flex-col gap-y-12 py-6">
-      <section className="text-xl leading-8">
+      <section className="text-lg md:text-xl md:leading-8">
         I am a Software Developer with a strong focus on creating intuitive
         interfaces and user-centered experiences that deliver seamless,
         accessible, and scalable digital solutions. I specialize in implementing
