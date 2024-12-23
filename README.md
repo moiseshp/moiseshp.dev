@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <a href="https://moiseshp.dev" target="_blank">
+  <a href="https://moiseshp.vercel.app/" target="_blank">
     Live Demo
   </a>
   <span>/</span>
@@ -21,6 +21,8 @@
     Contribute
   </a>
 </div>
+
+<br />
 
 <div align="center">
 
