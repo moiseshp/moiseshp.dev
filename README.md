@@ -1,24 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![Home Page](/images/Screenshot-Personal-Website.png)
 
-## Getting Started
+# My Personal Website
 
-First, run the development server:
+I am a Software Developer with a strong focus on creating intuitive interfaces and user-centered experiences that deliver seamless, accessible, and scalable digital solutions. I specialize in implementing best development practices, ensuring agile deliveries that drive business growth and meet organizational goals.
+
+## Table of Contents
+
+- [Description](#description)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Live Demo](#live-demo)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Description
+
+This project showcases my portfolio as a Software Developer. It includes sections for my projects and professional experiences, highlighting my skills and achievements.
+
+## Technologies
+
+- **React**
+- **Next.js**
+- **TypeScript**
+- **TailwindCSS**
+
+## Installation
+
+To get started with this project, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/moiseshp/moiseshp.dev.git
+cd moiseshp.dev
+npm install
+```
+
+## Usage
+
+To run the project locally, use the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the development server on `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Check out the live demo of the project [here](https://moiseshp.vercel.app).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries, please contact me at [moiseseduardo.hp@gmail.com](mailto:moiseseduardo.hp@gmail.com).
 
 ## Learn More
 
