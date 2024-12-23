@@ -1,7 +1,7 @@
 import { formatFriendlyDate } from '@/lib/format-friendly-date';
 import type { IProject } from '@/types/project';
 
-const hiddenProjects = ['moiseshp'];
+const hiddenProjects = ['moiseshp', 'blanquiazul'];
 
 const Project = {
   index: async (): Promise<IProject[]> => {
