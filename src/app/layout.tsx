@@ -1,4 +1,4 @@
-// import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { baseFont } from '@/app/fonts';
 import { cn } from '@/lib/utils';
@@ -9,10 +9,9 @@ import { ThemeToggle } from '@/components/theme-toggle';
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
-  title:
-    '2024 © dummylogo by moiseshp | Create Dummy Logos for Development Projects | Dummy Logo Builder',
+  title: 'Moisés Huaringa - portfolio web',
   description:
-    'Dummy Logo Builder helps developers create placeholder logos for testing and design purposes in seconds',
+    'I am a Software Developer with a strong focus on creating intuitive interfaces and user-centered experiences',
 };
 
 export default function RootLayout({
@@ -44,7 +43,7 @@ export default function RootLayout({
           </footer>
         </ThemeProvider>
       </body>
-      {/* <GoogleAnalytics gaId="G-W7MJZQ006Q" /> */}
+      <GoogleAnalytics gaId="G-4CZH6B6CVY" />
     </html>
   );
 }
