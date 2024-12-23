@@ -18,9 +18,9 @@
       {
         "name": "Issuing - Credit Card",
         "topics": [
-          "React",
+          "Javascript",
+          "React.js",
           "Node.js",
-          "Webviews",
           "React Query",
           "Styled Components"
         ],
@@ -31,7 +31,13 @@
       },
       {
         "name": "Checkout - Web Platform",
-        "topics": ["React", "Node.js", "React Query", "Styled Components"],
+        "topics": [
+          "Javascript",
+          "React.js",
+          "Node.js",
+          "React Query",
+          "Styled Components"
+        ],
         "descriptions": [
           "Integrated components using the BDUI system.",
           "Designed and implemented a view for collecting tips during the checkout process."
@@ -39,7 +45,13 @@
       },
       {
         "name": "Checkout Loyalty - Webview",
-        "topics": ["React", "Node.js", "Webviews"],
+        "topics": [
+          "Javascript",
+          "React.js",
+          "Node.js",
+          "Jest",
+          "Testing Library"
+        ],
         "descriptions": [
           "Improved waiting experience by implementing differentiated loading based on user type.",
           "Enhanced lead generation by displaying personalized campaigns tailored to user profiles."
@@ -65,7 +77,14 @@
     "projects": [
       {
         "name": "Rimac / Cuida Co. Backoffice",
-        "topics": ["React.js", "TypeScript", "Material UI", "Redux"],
+        "topics": [
+          "TypeScript",
+          "React.js",
+          "Material UI",
+          "Redux",
+          "Jest",
+          "Testing Library"
+        ],
         "descriptions": [
           "Developed the Backoffice platform for managing orders using modern frontend topics.",
           "Implemented a scalable architecture leveraging React.js with TypeScript and state management through Redux."
@@ -90,52 +109,19 @@
     },
     "projects": [
       {
-        "name": "Sky Airline Peru",
-        "topics": ["Vue.js"],
-        "descriptions": [
-          "Maintained web applications.",
-          "Developed Microfrontends for enhanced modularity."
-        ]
-      },
-      {
-        "name": "La Grama",
-        "topics": ["Vue.js"],
-        "descriptions": [
-          "Developed the company's administration system.",
-          "Implemented over 20 modules to automate various processes."
-        ]
-      },
-      {
         "name": "Revboss",
-        "topics": ["React.js"],
+        "topics": ["Javascript", "React.js", "Redux"],
         "descriptions": [
           "Redesigned the user management interface with a new look & feel.",
           "Maintained and developed new features focused on improving user experience."
         ]
       },
       {
-        "name": "Distintivos",
-        "topics": ["Vue.js"],
-        "descriptions": [
-          "Maintained and enhanced user experience for the registration section of evaluations.",
-          "Contributed to the application process workflow improvements."
-        ]
-      },
-      {
         "name": "Takay",
-        "topics": ["Node.js", "React.js"],
+        "topics": ["Javascript", "Node.js", "React.js"],
         "descriptions": [
           "Developed web services for web and mobile applications.",
           "Created the Module Administrator for the platform applications."
-        ]
-      },
-      {
-        "name": "Pacífico Seguros",
-        "topics": ["Laravel", "Vue.js"],
-        "descriptions": [
-          "Maintained and developed new features for Quote Calculators and Forms.",
-          "Maintained administrators for Quote Calculators and Forms.",
-          "Developed landing pages for health campaigns."
         ]
       }
     ]

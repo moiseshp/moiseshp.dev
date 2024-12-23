@@ -1,5 +1,6 @@
 'use client';
 import type { IExperience } from '@/types/experience';
+import { Topic } from '@/components/topic';
 
 type ExperienceCardProps = {
   items: IExperience[];
@@ -7,7 +8,7 @@ type ExperienceCardProps = {
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({ items }) => {
   return (
-    <ol className="relative border-l ml-1.5">
+    <ol className="border-l ml-2 relative">
       {items.map(
         ({
           id,
@@ -18,15 +19,18 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({ items }) => {
           employmentType,
           projects,
         }) => (
-          <li key={id} className="mb-10 ml-7 lg:ml-8">
-            <div className="absolute w-3 h-3 bg-background rounded-full mt-[0.45rem] -left-[0.4rem] border border-muted-foreground/50" />
-            <time className="block pt-1.5 leading-none text-muted-foreground text-sm mb-5">
+          <li key={id} className="mb-4 ml-6 md:ml-8 border rounded-lg p-5">
+            <div className="absolute h-3 w-6 md:w-8 -left-[0.4rem]">
+              <span className="block w-full h-px bg-border absolute top-1/2 -z-10 left-[0.4rem]" />
+              <span className="block w-3 h-3 bg-background rounded-full border" />
+            </div>
+            <time className="block leading-none text-muted-foreground text-sm mb-6">
               {duration.startDate} – {duration.endDate}
             </time>
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <img
                 src={company.logo}
-                alt="sss"
+                alt={company.name}
                 className="w-10 h-10 object-cover"
               />
               <div className="flex-1 space-y-3">
@@ -44,29 +48,24 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({ items }) => {
                   <p className="text-muted-foreground">{location}</p>
                 </div>
 
-                <h4 className="font-semibold mb-3">Proyectos Destacados</h4>
-                {projects.map(({ name, topics, descriptions }) => (
-                  <ol key={name} className="pl-5 list-disc">
-                    <li>
+                <h4 className="font-semibold mb-3">Featured Projects</h4>
+                <ol className="pl-3.5 md:pl-5 list-disc space-y-6">
+                  {projects.map(({ name, topics, descriptions }) => (
+                    <li key={name}>
                       <h4 className="font-semibold mb-2">{name}</h4>
-                      <ol className="pl-5 list-disc mb-4 space-y-1">
+                      <ol className="pl-3.5 md:pl-5 list-disc mb-4 space-y-1">
                         {descriptions.map((item: string) => (
                           <li key={item}>{item}</li>
                         ))}
                       </ol>
                       <div className="flex flex-wrap gap-2">
                         {topics.map((item) => (
-                          <span
-                            key={item}
-                            className="px-2 py-0.5 text-sm border border-dotted border-muted-foreground"
-                          >
-                            {item}
-                          </span>
+                          <Topic key={item} label={item} />
                         ))}
                       </div>
                     </li>
-                  </ol>
-                ))}
+                  ))}
+                </ol>
               </div>
             </div>
           </li>
