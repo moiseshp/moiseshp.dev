@@ -1,10 +1,9 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import vercel from '@astrojs/vercel';
-import partytown from '@astrojs/partytown';
 
 export default defineConfig({
-  integrations: [tailwind(), partytown()],
+  integrations: [tailwind()],
   output: 'server',
   adapter: vercel({
     isr: {
