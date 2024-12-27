@@ -5,12 +5,12 @@
 <h1 align="center">Astro Portfolio Template 🚀</h1>
 
 <p align="center">
-This is a customizable portfolio template built with   <a href="https://astro.build/" target="_blank">Astro</a>. Whether you're a developer, designer, or creative professional, this template is designed to help you showcase your work in style. You can also use it as a starting point for your own projects or as a personal portfolio.
+This is a customizable portfolio template built with <a href="https://astro.build/" target="_blank">Astro</a>. Whether you're a developer, designer, or creative professional, this template is designed to help you showcase your work in style. You can also use it as a starting point for your own projects or as a personal portfolio.
 
 </p>
 
 <div align="center">
-  <a href="https://moiseshp.vercel.app/" target="_blank">
+  <a href="https://moiseshp.vercel.app" target="_blank">
     Live Demo
   </a>
   <span>/</span>
