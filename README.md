@@ -75,7 +75,7 @@ npm run dev
 
 Open your browser and navigate to http://localhost:4321 to view your site.
 
-## Deployment 🚀
+## 🚀 Deployment
 
 You can deploy your portfolio easily using any hosting service Astro supports. Here are two popular options:
 
@@ -89,11 +89,7 @@ You can deploy your portfolio easily using any hosting service Astro supports. H
 
 Astro allows you to deploy to custom servers. For more details, refer to the [Astro deployment documentation](https://docs.astro.build/en/guides/deploy/).
 
-## 📄 License
-
-This project is licensed under the **MIT License**. Feel free to use, modify, and distribute it as you wish. See the full license text in the [LICENSE](LICENSE) file.
-
-## Contributing 🤝
+## 🤝 Contributing
 
 If you find this template useful, feel free to leave a star ⭐️! Contributions, issues, and feedback are welcome.
 
@@ -101,3 +97,7 @@ If you find this template useful, feel free to leave a star ⭐️! Contribution
 
 - [Astro Documentation](https://docs.astro.build/)
 - [Deploying Astro Projects](https://docs.astro.build/en/guides/deploy/)
+
+## 📄 License
+
+This project is licensed under the **MIT License**. Feel free to use, modify, and distribute it as you wish. See the full license text in the [LICENSE](LICENSE) file.
