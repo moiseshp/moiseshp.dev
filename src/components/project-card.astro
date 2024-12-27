@@ -1,0 +1,69 @@
+---
+import Chip from '@/components/chip.astro';
+import Button from '@/components/ui/button.astro';
+import StarIcon from '@/components/icons/star.astro';
+import CalendarCheckIcon from '@/components/icons/calendar-check.astro';
+import GitForkIcon from '@/components/icons/git-fork.astro';
+import WorldIcon from '@/components/icons/world.astro';
+import GithubIcon from '@/components/icons/github.astro';
+import FolderOpenIcon from '@/components/icons/folder-open.astro';
+import { formatFriendlyDate } from '@/lib/format-friendly-date';
+import type { IProject } from '@/types/project';
+
+const {
+  name,
+  topics,
+  description,
+  forks,
+  stargazersCount,
+  webUrl,
+  updatedAt,
+  projectUrl,
+} = Astro.props as IProject;
+---
+
+<article class="flex flex-col rounded-lg bg-card px-4 py-2">
+  <div class="flex items-center justify-between">
+    <a
+      href={webUrl}
+      class="flex items-center gap-x-3"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FolderOpenIcon className="text-primary" />
+      <span class="flex items-center gap-x-1">
+        {name}
+      </span>
+    </a>
+    <Button isIcon asChild>
+      <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+        <WorldIcon className="h-5 w-5" />
+      </a>
+    </Button>
+  </div>
+  <div class="mb-5 mt-2 text-base md:truncate">{description}</div>
+  <div class="mb-2 flex flex-wrap gap-1.5">
+    {topics.map((item) => <Chip key={item}>{item}</Chip>)}
+  </div>
+  <div class="flex justify-between gap-x-2">
+    <div class="flex gap-x-3">
+      <div class="flex items-center gap-x-1.5">
+        <StarIcon className="h-4 w-4" />
+        <span class="text-xs">{stargazersCount}</span>
+      </div>
+      <div class="flex items-center gap-x-1.5">
+        <GitForkIcon className="h-4 w-4" />
+        <span class="text-xs">{forks}</span>
+      </div>
+      <div class="flex items-center gap-x-1.5">
+        <CalendarCheckIcon className="h-4 w-4" />
+        <span class="text-xs">Updated {formatFriendlyDate(updatedAt)}</span>
+      </div>
+    </div>
+    <Button isIcon asChild>
+      <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+        <GithubIcon className="h-5 w-5" />
+      </a>
+    </Button>
+  </div>
+</article>

@@ -1,0 +1,20 @@
+---
+import Button from '@/components/ui/button.astro';
+import SunIcon from '@/components/icons/sun.astro';
+import MoonIcon from '@/components/icons/moon.astro';
+
+const handleTheme = `
+  const root = document.documentElement;
+  const isDark = root.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+`;
+---
+
+<Button isIcon onClick={handleTheme}>
+  <span class="sr-only">
+    Enable <span class="dark:hidden">light</span>
+    <span class="hidden dark:inline">dark</span> mode
+  </span>
+  <SunIcon className="hidden dark:inline" />
+  <MoonIcon className="dark:hidden" />
+</Button>

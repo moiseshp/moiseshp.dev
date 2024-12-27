@@ -1,0 +1,63 @@
+---
+import ThemeToggle from '@/components/theme-toggle.astro';
+import BrandName from '@/components/brand-name.astro';
+import SocialMediaList from '@/components/social-media-list.astro';
+import '@/styles/global.css';
+
+const GOOGLE_ANALYTICS_ID = 'G-4CZH6B6CVY';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="I am a Software Developer with a strong focus on creating intuitive interfaces and user-centered experiences"
+    />
+    <title>Moisés Huaringa - My Portfolio web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline src="/src/scripts/set-theme.ts"></script>
+    <script
+      is:inline
+      async
+      type="text/partytown"
+      src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
+    ></script>
+    <script is:inline type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', GOOGLE_ANALYTICS_ID);
+    </script>
+  </head>
+</html>
+<body
+  class="flex min-h-screen flex-col bg-background font-sans text-foreground antialiased"
+>
+  <header
+    class="container sticky top-0 z-10 flex max-w-3xl items-center justify-between bg-background px-3 py-6 lg:px-0"
+  >
+    <BrandName />
+    <nav class="flex items-center space-x-1 lg:space-x-2">
+      <SocialMediaList />
+      <ThemeToggle />
+    </nav>
+  </header>
+  <main class="container max-w-3xl flex-grow px-5 lg:px-0">
+    <slot />
+  </main>
+  <footer class="container max-w-3xl px-5 py-6 text-sm lg:px-0">
+    © {new Date().getFullYear()} Moisés Huaringa
+  </footer>
+</body>

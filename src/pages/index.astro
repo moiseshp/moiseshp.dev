@@ -1,0 +1,48 @@
+---
+import ProjectCard from '@/components/project-card.astro';
+import BaseLayout from '@/layouts/base.astro';
+import type { IProject } from '@/types/project';
+import type { IExperience } from '@/types/experience';
+import { getProjects } from '@/server/getProjects';
+import { getExperiences } from '@/server/get-experiences';
+import ExperienceCard from '@/components/experience-card.astro';
+
+const projects = await getProjects();
+const experiences = getExperiences();
+---
+
+<BaseLayout>
+  <div class="flex flex-col gap-y-12 py-6 md:py-8">
+    <section class="text-2xl font-semibold md:text-4xl md:leading-[3rem]">
+      <p>
+        <span class="text-primary">I'm a Software Developer</span> specializing in
+        JavaScript, React, and UI/UX, dedicated to crafting intuitive and modern
+        user experiences.
+      </p>
+    </section>
+    <section>
+      <h2 class="mb-5 text-xl font-semibold md:text-2xl">Projects</h2>
+      {
+        projects?.error ? (
+          <div class="rounded-md bg-card p-4">{projects.error}</div>
+        ) : (
+          <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+            {projects.data!.map((item: IProject) => (
+              <ProjectCard {...item} />
+            ))}
+          </div>
+        )
+      }
+    </section>
+    <section>
+      <h2 class="mb-5 text-xl font-semibold md:text-2xl">Experience</h2>
+      <div class="relative ml-2 border-l">
+        {
+          experiences.data.map((item: IExperience) => (
+            <ExperienceCard {...item} />
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</BaseLayout>

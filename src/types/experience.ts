@@ -1,7 +1,6 @@
 import type { IProject } from '@/types/project';
 
 export interface IExperience {
-  id: number;
   position: string;
   company: {
     name: string;

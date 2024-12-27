@@ -1,13 +1,13 @@
 export interface IProject {
-  id: number;
+  id?: number;
   name: string;
-  homepage: string;
-  htmlUrl: string;
-  description: string;
-  descriptions: string[];
+  webUrl?: string;
+  projectUrl?: string;
+  description?: string;
+  descriptionList?: string[];
   topics: string[];
-  forks: number;
-  stargazersCount: number;
-  forksCount: number;
-  updatedAtFriendly: string;
+  forks?: number;
+  stargazersCount?: number;
+  forksCount?: number;
+  updatedAt?: string;
 }

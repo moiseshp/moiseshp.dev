@@ -1,0 +1,43 @@
+---
+import Button from '@/components/ui/button.astro';
+import GithubIcon from '@/components/icons/github.astro';
+import LinkedinIcon from '@/components/icons/linkedin.astro';
+import XIcon from '@/components/icons/x.astro';
+
+const items = [
+  {
+    name: 'GitHub',
+    url: 'https://github.com/moiseshp',
+    icon: GithubIcon,
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/moiseshp',
+    icon: LinkedinIcon,
+  },
+  { name: 'X', url: 'https://x.com/moiseseduardohp', icon: XIcon },
+  // {
+  //   name: 'CVResume',
+  //   url: 'https://cvresume.dev/moiseshp',
+  //   icon: FileText,
+  // },
+];
+---
+
+{
+  items.map((item) => {
+    const Icon = item.icon;
+    return (
+      <Button isIcon asChild key={item.url}>
+        <a
+          href={item.url}
+          title={`Go to ${item.url}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon />
+        </a>
+      </Button>
+    );
+  })
+}

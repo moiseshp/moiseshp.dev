@@ -3,7 +3,8 @@
  * @param date - The date in string format (YYYY-MM-DD).
  * @returns The friendly description (e.g., "4 days ago", "1 year ago").
  */
-export function formatFriendlyDate(date: string): string {
+export function formatFriendlyDate(date?: string): string {
+  if (!date) return '';
   const dateObj = new Date(date);
   const now = new Date();
   const diffTime = Math.abs(now.getTime() - dateObj.getTime());
