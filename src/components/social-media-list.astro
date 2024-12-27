@@ -16,11 +16,6 @@ const items = [
     icon: LinkedinIcon,
   },
   { name: 'X', url: 'https://x.com/moiseseduardohp', icon: XIcon },
-  // {
-  //   name: 'CVResume',
-  //   url: 'https://cvresume.dev/moiseshp',
-  //   icon: FileText,
-  // },
 ];
 ---
 
@@ -31,7 +26,7 @@ const items = [
       <Button isIcon asChild key={item.url}>
         <a
           href={item.url}
-          title={`Go to ${item.url}`}
+          title={`Go to ${item.name}`}
           target="_blank"
           rel="noopener noreferrer"
         >

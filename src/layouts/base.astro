@@ -45,12 +45,14 @@ import '@/styles/global.css';
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>My Portfolio web - Moisés Huaringa</title>
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Set default theme -->
     <script>
       const storedTheme = localStorage.getItem('theme');
       const prefersDark = window.matchMedia(
@@ -63,6 +65,19 @@ import '@/styles/global.css';
       } else {
         root.classList.remove('dark');
       }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      is:inline
+      src="https://www.googletagmanager.com/gtag/js?id=G-4CZH6B6CVY"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-4CZH6B6CVY');
     </script>
   </head>
 </html>
