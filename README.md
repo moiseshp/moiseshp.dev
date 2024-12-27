@@ -1,8 +1,8 @@
 <div align="center" style="background: #fafafa; padding: 24px;">
-  <img src="public/images/Screenshot-Personal-Website.png" alt="Home Page" style="border-radius: 10px" />
+  <img src="public/Screenshot-My-Portfolio-Web.png" alt="Home Page" style="border-radius: 10px" />
 </div>
 
-<h1 align="center">My Personal Website</h1>
+<h1 align="center">My Portfolio Web</h1>
 
 <p align="center">
   Welcome to my personal website repository! This project showcases my portfolio as a Software Developer, including sections for my projects and professional experiences.
