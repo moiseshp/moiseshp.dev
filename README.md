@@ -10,7 +10,7 @@ This is a customizable portfolio template built with <a href="https://astro.buil
 </p>
 
 <div align="center">
-  <a href="https://moiseshp.vercel.app" target="_blank">
+  <a href="https://moiseshp.dev" target="_blank">
     Live Demo
   </a>
   <span>/</span>
