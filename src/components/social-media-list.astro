@@ -23,15 +23,16 @@ const items = [
   items.map((item) => {
     const Icon = item.icon;
     return (
-      <Button isIcon asChild key={item.url}>
-        <a
-          href={item.url}
-          title={`Go to ${item.name}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Icon />
-        </a>
+      <Button
+        isIcon
+        asChild
+        key={item.url}
+        href={item.url}
+        title={`Go to ${item.name}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon />
       </Button>
     );
   })

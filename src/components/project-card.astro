@@ -28,6 +28,7 @@ const {
       href={webUrl}
       class="flex items-center gap-x-3"
       target="_blank"
+      title={`Go to the website ${name}`}
       rel="noopener noreferrer"
     >
       <FolderOpenIcon className="text-primary" />
@@ -35,10 +36,14 @@ const {
         {name}
       </span>
     </a>
-    <Button isIcon asChild>
-      <a href={webUrl} target="_blank" rel="noopener noreferrer">
-        <WorldIcon className="h-5 w-5" />
-      </a>
+    <Button
+      isIcon
+      asChild
+      href={webUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <WorldIcon className="h-5 w-5" />
     </Button>
   </div>
   <div class="mb-5 mt-2 text-base md:truncate">{description}</div>
@@ -60,10 +65,15 @@ const {
         <span class="text-xs">Updated {formatFriendlyDate(updatedAt)}</span>
       </div>
     </div>
-    <Button isIcon asChild>
-      <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-        <GithubIcon className="h-5 w-5" />
-      </a>
+    <Button
+      isIcon
+      asChild
+      href={projectUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={`Go to the GitHub project ${name}`}
+    >
+      <GithubIcon className="h-5 w-5" />
     </Button>
   </div>
 </article>
