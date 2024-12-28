@@ -1,7 +1,7 @@
 {
   "name": "moiseshp",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "dev": "astro dev --host",
     "build": "astro build",
@@ -10,7 +10,6 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/partytown": "^2.1.2",
     "@astrojs/tailwind": "^5.1.4",
     "@astrojs/vercel": "^8.0.1",
     "astro": "^5.1.1",
