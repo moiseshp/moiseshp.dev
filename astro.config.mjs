@@ -4,8 +4,15 @@ import partytown from '@astrojs/partytown';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  integrations: [tailwind(), partytown()],
-  publicDir: './public',
+  integrations: [
+    tailwind(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
+  ],
+  site: 'https://moiseshp.dev',
   output: 'server',
   adapter: vercel({
     isr: {
