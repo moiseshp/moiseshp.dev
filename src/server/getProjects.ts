@@ -26,7 +26,7 @@ export async function getProjects(): Promise<{
         })),
     };
   } catch (error) {
-    console.error({ error });
+    console.error(`GET_PROJECTS: ${JSON.stringify(error)}`);
     return {
       error: 'Oops! Failed to fetch projects from GitHub',
     };
