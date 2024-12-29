@@ -24,7 +24,7 @@ const experiences = getExperiences();
       <h2 class="mb-5 text-xl font-semibold md:text-2xl">Projects</h2>
       {
         projects?.error ? (
-          <div class="rounded-md bg-card p-4">{projects.error}</div>
+          <div class="rounded-md bg-muted p-4">{projects.error}</div>
         ) : (
           <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
             {projects.data!.map((item: IProject) => (
