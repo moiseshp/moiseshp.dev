@@ -6,7 +6,7 @@ import CalendarCheckIcon from '@/components/icons/calendar-check.astro';
 import GitForkIcon from '@/components/icons/git-fork.astro';
 import WorldIcon from '@/components/icons/world.astro';
 import GithubIcon from '@/components/icons/github.astro';
-import FolderOpenIcon from '@/components/icons/folder-open.astro';
+import BoxIcon from '@/components/icons/box.astro';
 import { formatFriendlyDate } from '@/lib/format-friendly-date';
 import type { IProject } from '@/types/project';
 
@@ -31,7 +31,7 @@ const {
       title={`Go to the website ${name}`}
       rel="noopener noreferrer"
     >
-      <FolderOpenIcon className="text-primary" />
+      <BoxIcon className="text-primary" />
       <span class="flex items-center gap-x-1">
         {name}
       </span>
