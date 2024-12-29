@@ -2,7 +2,7 @@
   <img src="public/Screenshot-My-Portfolio-Web.png" alt="Screenshot - Astro Portfolio Template" />
 </div>
 
-<h1 align="center">Astro Portfolio Template 🚀</h1>
+<h1 align="center">Astro Portfolio Template</h1>
 
 <p align="center">
 This is a customizable portfolio template built with <a href="https://astro.build/" target="_blank">Astro</a>. Whether you're a developer, designer, or creative professional, this template is designed to help you showcase your work in style. You can also use it as a starting point for your own projects or as a personal portfolio.
@@ -21,10 +21,6 @@ This is a customizable portfolio template built with <a href="https://astro.buil
   <a href="https://github.com/moiseshp/moiseshp.dev?tab=readme-ov-file#-stack">
     Stack
   </a>
-  <span>/</span>
-  <a href="https://github.com/moiseshp/moiseshp.dev?tab=readme-ov-file#-deployment">
-    Deployment
-  </a>
 </div>
 
 <br />
@@ -39,13 +35,35 @@ This is a customizable portfolio template built with <a href="https://astro.buil
 
 ## 🌟 Features
 
-- Fully customizable portfolio design.
-- Built with Astro, a modern static site builder.
-- Responsive design that looks great on any device.
-- Support for custom servers and seamless deployment to Vercel or other hosting providers.
-- Easy to clone and use as a template for your projects.
-- Show experiences in an interactive timeline UI, presenting events or milestones in a visually engaging way.
-- List your GitHub projects with details like project name, description, and direct links to the repositories.
+1. **Customizable Fonts from Google Fonts**  
+   Easily change the font style of your project by selecting any font from [Google Fonts](https://fonts.google.com).
+
+2. **Integrated Google Analytics**  
+   Track your website's performance and user behavior effortlessly with built-in Google Analytics support.
+
+3. **Easily Customizable Theme Colors**  
+   [Adjust theme](https://github.com/moiseshp/moiseshp.dev/blob/main/src/styles/global.css) colors conveniently using CSS variables or Tailwind's theming capabilities.
+
+4. **Showcase Your Work Experience in a Timeline**  
+   Display your professional journey with a clear and visually appealing timeline format.
+
+5. **Feature Your GitHub Projects**  
+   Automatically display projects from your GitHub profile for seamless integration and showcasing.
+
+6. **Responsive Design**  
+   Optimized for all devices, ensuring a great user experience on desktop, tablet, and mobile screens.
+
+7. **Dark and Light Theme Options**  
+   Switch between dark and light modes to suit user preferences or system settings.
+
+8. **Add New Icons from Tabler Icons**  
+   Expand your icon library easily by integrating additional icons from [Tabler Icons](https://tabler.io/icons).
+
+9. **Built with Astro, a Modern Static Site Builder**  
+   Developed using [Astro](https://astro.build), a cutting-edge static site generator that ensures fast performance, excellent SEO optimization, and smooth scalability.
+
+10. **Deployment Support**  
+    Deploy your project effortlessly using Vercel, Netlify, or [any custom server setup](https://docs.astro.build/en/guides/deploy/).
 
 ## 📦 Stack
 
@@ -75,20 +93,6 @@ npm run dev
 
 Open your browser and navigate to http://localhost:4321 to view your site.
 
-## 🚀 Deployment
-
-You can deploy your portfolio easily using any hosting service Astro supports. Here are two popular options:
-
-### **Option 1: Vercel**
-
-1. Sign up at [Vercel](https://vercel.com/).
-2. Import your repository.
-3. Vercel will handle the deployment for you.
-
-### **Option 2: Custom Server**
-
-Astro allows you to deploy to custom servers. For more details, refer to the [Astro deployment documentation](https://docs.astro.build/en/guides/deploy/).
-
 ## 🤝 Contributing
 
 If you find this template useful, feel free to leave a star ⭐️! Contributions, issues, and feedback are welcome.
@@ -97,7 +101,10 @@ If you find this template useful, feel free to leave a star ⭐️! Contribution
 
 - [Astro Documentation](https://docs.astro.build/)
 - [Deploying Astro Projects](https://docs.astro.build/en/guides/deploy/)
+- [Tailwind Colors](https://tailscan.com/colors)
+- [HSL Color Picker](https://hslpicker.com/)
+- [Tabler Icons](https://tabler.io/icons)
 
 ## 📄 License
 
-This project is licensed under the **MIT License**. Feel free to use, modify, and distribute it as you wish. See the full license text in the [LICENSE](LICENSE) file.
+This project is licensed under the [MIT](LICENSE).
