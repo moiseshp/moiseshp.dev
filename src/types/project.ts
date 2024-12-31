@@ -4,7 +4,6 @@ export interface IProject {
   webUrl?: string;
   projectUrl?: string;
   description?: string;
-  descriptionList?: string[];
   topics: string[];
   forks?: number;
   stargazersCount?: number;

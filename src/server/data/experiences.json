@@ -6,6 +6,7 @@
       "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQH7IjoCNSFYFQ/company-logo_100_100/company-logo_100_100/0/1630546907029/pedidosya_logo?e=1743033600&v=beta&t=XY5abHRIKEhGSmVY1bGJ3qlR6XxhxApm9SRg7Yy-lZI",
       "url": "https://www.pedidosya.com/"
     },
+    "summary": "Leading delivery platform in Latin America, focused on scalable technological solutions to optimize user experience and logistics.",
     "employmentType": "Full-time",
     "location": "Lima, Peru",
     "duration": {
@@ -15,46 +16,32 @@
     },
     "projects": [
       {
-        "name": "Issuing - Credit Card",
+        "description": "Issuing - Credit Card: The PeYa Credit Card, where I contributed to product design and collaborated in building the Onboarding and Customer Transaction List views.",
         "topics": [
           "Javascript",
-          "React.js",
-          "Node.js",
+          "React",
+          "Node",
           "React Query",
           "Styled Components"
-        ],
-        "descriptionList": [
-          "Developed hybrid views combining native and webviews HTML for client onboarding.",
-          "Built a dedicated Webview for displaying the transaction list for customers."
         ]
       },
       {
-        "name": "Checkout - Web Platform",
+        "description": "Checkout - Web: Participated in the maintenance and integration of components via BDUI for the Checkout view of the PeYa application.",
         "topics": [
           "Javascript",
-          "React.js",
-          "Node.js",
+          "React",
+          "Node",
           "React Query",
           "Styled Components"
-        ],
-        "descriptionList": [
-          "Integrated components using the BDUI system.",
-          "Designed and implemented a view for collecting tips during the checkout process."
         ]
       },
       {
-        "name": "Checkout Loyalty - Webview",
-        "topics": [
-          "Javascript",
-          "React.js",
-          "Node.js",
-          "Jest",
-          "Testing Library"
-        ],
-        "descriptionList": [
-          "Improved waiting experience by implementing differentiated loading based on user type.",
-          "Enhanced lead generation by displaying personalized campaigns tailored to user profiles."
-        ]
+        "description": "Checkout Loyalty: Collaborated on updating UI components to enhance the experience and registration process for new users joining PeYa's Plus membership.",
+        "topics": ["Javascript", "React", "Node", "Jest", "Testing Library"]
+      },
+      {
+        "description": "Fenix UI: Actively contributed to PeYa's web component library.",
+        "topics": ["Javascript", "React", "CSS", "Storyboard"]
       }
     ]
   },
@@ -65,6 +52,7 @@
       "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQEaNYud89J8ZA/company-logo_100_100/company-logo_100_100/0/1732122996831/indra_logo?e=1743033600&v=beta&t=QSggHtO8PUGwj7-edsIRRCPTD6kLKmd-E6msyWMr6U8",
       "url": "https://www.indracompany.com/"
     },
+    "summary": "Leading multinational in technology: Specializing in digital solutions and managed services for sectors such as insurance, healthcare, and more.",
     "employmentType": "Full-time",
     "location": "San Isidro, Lima, Peru",
     "duration": {
@@ -74,18 +62,13 @@
     },
     "projects": [
       {
-        "name": "Rimac / Cuida Co. Backoffice",
+        "description": "Rimac - Cuida Co.: Together with the team, we developed the Backoffice platform for collaborators to improve the management of insured clients.",
         "topics": [
           "TypeScript",
-          "React.js",
+          "React",
           "Material UI",
           "Redux",
-          "Jest",
           "Testing Library"
-        ],
-        "descriptionList": [
-          "Developed the Backoffice platform for managing orders using modern frontend topics.",
-          "Implemented a scalable architecture leveraging React.js with TypeScript and state management through Redux."
         ]
       }
     ]
@@ -97,6 +80,7 @@
       "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQF0cXEbju-oLw/company-logo_100_100/company-logo_100_100/0/1657653911010?e=1743033600&v=beta&t=7STzyW9tTo91la4NJhQ0cfdcSWqyUDDM9BrdMp_LCO0",
       "url": "https://www.tektonlabs.com/"
     },
+    "summary": "Software development and technology consulting company, specializing in custom solutions and digital product design.",
     "employmentType": "Full-time",
     "location": "Magdalena, Peru",
     "duration": {
@@ -106,20 +90,12 @@
     },
     "projects": [
       {
-        "name": "Revboss",
-        "topics": ["Javascript", "React.js", "Redux"],
-        "descriptionList": [
-          "Redesigned the user management interface with a new look & feel.",
-          "Maintained and developed new features focused on improving user experience."
-        ]
+        "description": "Revboss - USA: I participated in updating the new branding of the application for end clients. The redesign was fully done in React components, improving the user experience with various business features.",
+        "topics": ["Javascript", "React", "Redux"]
       },
       {
-        "name": "Takay",
-        "topics": ["Javascript", "Node.js", "React.js"],
-        "descriptionList": [
-          "Developed web services for web and mobile applications.",
-          "Created the Module Administrator for the platform applications."
-        ]
+        "description": "Takay: I collaborated in building the API and creating endpoints for the native application available to end users for their purchases. Additionally, I contributed to the web dashboard for business collaborators.",
+        "topics": ["Javascript", "Node", "React", "Adonis"]
       }
     ]
   }

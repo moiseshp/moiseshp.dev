@@ -7,6 +7,7 @@ export interface IExperience {
     logo: string;
     url: string;
   };
+  summary: string;
   employmentType: string;
   location: string;
   duration: {

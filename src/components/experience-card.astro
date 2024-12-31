@@ -2,8 +2,15 @@
 import type { IExperience } from '@/types/experience';
 import Chip from '@/components/chip.astro';
 
-const { duration, position, location, company, employmentType, projects } =
-  Astro.props as IExperience;
+const {
+  duration,
+  position,
+  location,
+  company,
+  summary,
+  employmentType,
+  projects,
+} = Astro.props as IExperience;
 ---
 
 <article class="mb-4 ml-6 py-2.5">
@@ -25,29 +32,28 @@ const { duration, position, location, company, employmentType, projects } =
           <span class="px-1">·</span>
           <span>{employmentType}</span>
         </a>
-        <p class="text-muted-foreground">{location}</p>
+        {location && <p class="text-muted-foreground">{location}</p>}
       </div>
 
-      <h4 class="mb-3 font-semibold">Featured Projects</h4>
-      <ol class="list-decimal space-y-6 pl-4 md:pl-5">
-        {
-          projects.map(({ name, topics, descriptionList }) => (
-            <li>
-              <h4 class="mb-2 font-semibold">{name}</h4>
-              <ol class="mb-4 list-disc space-y-1 pl-3.5 md:pl-5">
-                {descriptionList?.map((item: string) => (
-                  <li>{item}</li>
-                ))}
-              </ol>
-              <div class="flex flex-wrap gap-2">
-                {topics.map((item) => (
-                  <Chip>{item}</Chip>
-                ))}
-              </div>
-            </li>
-          ))
-        }
-      </ol>
+      {summary && <h4 class="mb-3">{summary}</h4>}
+      {
+        !!projects.length && (
+          <ol class="space-y-6">
+            {projects.map(({ topics, description }) => (
+              <li class="ml-4 list-disc">
+                {description && <p class="mb-3">{description}</p>}
+                {!!topics.length && (
+                  <div class="flex flex-wrap gap-2">
+                    {topics.map((item) => (
+                      <Chip>{item}</Chip>
+                    ))}
+                  </div>
+                )}
+              </li>
+            ))}
+          </ol>
+        )
+      }
     </div>
   </div>
 </article>
