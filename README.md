@@ -38,7 +38,7 @@ This is a customizable portfolio template built with <a href="https://astro.buil
 1. **Customizable Fonts from Google Fonts**  
    Easily change the font style of your project by selecting any font from [Google Fonts](https://fonts.google.com).
 
-2. **Integrated Afref Web Analytics**  
+2. **Integrated Ahrefs Web Analytics**  
    Monitor your website traffic with simple and privacy-friendly analytics. No cookies. No personal data
 
 3. **Easily Customizable Theme Colors**  
