@@ -38,8 +38,8 @@ This is a customizable portfolio template built with <a href="https://astro.buil
 1. **Customizable Fonts from Google Fonts**  
    Easily change the font style of your project by selecting any font from [Google Fonts](https://fonts.google.com).
 
-2. **Integrated Google Analytics**  
-   Track your website's performance and user behavior effortlessly with built-in Google Analytics support.
+2. **Integrated Afref Web Analytics**  
+   Monitor your website traffic with simple and privacy-friendly analytics. No cookies. No personal data
 
 3. **Easily Customizable Theme Colors**  
    [Adjust theme](https://github.com/moiseshp/moiseshp.dev/blob/main/src/styles/global.css) colors conveniently using CSS variables or Tailwind's theming capabilities.
