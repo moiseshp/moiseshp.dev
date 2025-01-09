@@ -1,4 +1,5 @@
 import type { IProject } from '@/types/project';
+import customProjects from '@/server/data/custom-projects.json';
 
 export async function getProjects(): Promise<{
   data?: IProject[];
@@ -13,17 +14,19 @@ export async function getProjects(): Promise<{
 
     const items = await response.json();
     const hiddenProjects = ['moiseshp', 'blanquiazul'];
+    const projects = items
+      .filter((item: any) => !hiddenProjects.includes(item.name))
+      .map((item: any) => ({
+        ...item,
+        webUrl: item.homepage,
+        projectUrl: item.html_url,
+        stargazersCount: item.stargazers_count,
+        forksCount: item.forks_count,
+        updatedAt: item.pushed_at,
+      }));
+
     return {
-      data: items
-        .filter((item: any) => !hiddenProjects.includes(item.name))
-        .map((item: any) => ({
-          ...item,
-          webUrl: item.homepage,
-          projectUrl: item.html_url,
-          stargazersCount: item.stargazers_count,
-          forksCount: item.forks_count,
-          updatedAt: item.pushed_at,
-        })),
+      data: [...customProjects, ...projects],
     };
   } catch (error) {
     console.error(`GET_PROJECTS: ${JSON.stringify(error)}`);

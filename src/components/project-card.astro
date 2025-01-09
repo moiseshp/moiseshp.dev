@@ -52,31 +52,43 @@ const {
   <div class="mb-2 flex flex-wrap gap-1.5">
     {topics.map((item) => <Chip key={item}>{item}</Chip>)}
   </div>
-  <div class="flex justify-between gap-x-2">
+  <div class="flex h-10 items-center justify-between gap-x-2">
     <div class="flex gap-x-3">
-      <div class="flex items-center gap-x-1.5">
-        <StarIcon className="h-4 w-4" />
-        <span class="text-xs">{stargazersCount}</span>
-      </div>
-      <div class="flex items-center gap-x-1.5">
-        <GitForkIcon className="h-4 w-4" />
-        <span class="text-xs">{forks}</span>
-      </div>
+      {
+        !!stargazersCount && (
+          <div class="flex items-center gap-x-1.5">
+            <StarIcon className="h-4 w-4" />
+            <span class="text-xs">{stargazersCount}</span>
+          </div>
+        )
+      }
+      {
+        !!forks && (
+          <div class="flex items-center gap-x-1.5">
+            <GitForkIcon className="h-4 w-4" />
+            <span class="text-xs">{forks}</span>
+          </div>
+        )
+      }
       <div class="flex items-center gap-x-1.5">
         <CalendarCheckIcon className="h-4 w-4" />
         <span class="text-xs">Updated {formatFriendlyDate(updatedAt)}</span>
       </div>
     </div>
-    <Button
-      isIcon
-      asChild
-      href={projectUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      title={`Go to the GitHub project ${name}`}
-      className="-mr-2"
-    >
-      <GithubIcon className="h-5 w-5" />
-    </Button>
+    {
+      projectUrl && (
+        <Button
+          isIcon
+          asChild
+          href={projectUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={`Go to the GitHub project ${name}`}
+          className="-mr-2"
+        >
+          <GithubIcon className="h-5 w-5" />
+        </Button>
+      )
+    }
   </div>
 </article>
