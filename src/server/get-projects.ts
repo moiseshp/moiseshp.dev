@@ -13,7 +13,12 @@ export async function getProjects(): Promise<{
     if (!response.ok) throw Error;
 
     const items = await response.json();
-    const hiddenProjects = ['moiseshp', 'blanquiazul'];
+    const hiddenProjects = [
+      'moiseshp',
+      'blanquiazul',
+      'moiseshp.dev',
+      'dummy-logo-maker',
+    ];
     const projects = items
       .filter((item: any) => !hiddenProjects.includes(item.name))
       .map((item: any) => ({
